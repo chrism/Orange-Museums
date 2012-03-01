@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Orange Museums - Screens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      section.screen {
+        padding-top: 90px;
+      }
+      /* Subnav */
+      .subnav {
+        width: 100%;
+        height: 36px;
+        background-color: #eeeeee; /* Old browsers */
+        background-repeat: repeat-x; /* Repeat the gradient */
+        background-image: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%); /* FF3.6+ */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+        background-image: -webkit-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* Chrome 10+,Safari 5.1+ */
+        background-image: -ms-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* IE10+ */
+        background-image: -o-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* Opera 11.10+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+        background-image: linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* W3C */
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 4px;
+           -moz-border-radius: 4px;
+                border-radius: 4px;
+      }
+      .subnav .nav {
+        margin-bottom: 0;
+      }
+      .subnav .nav > li > a {
+        margin: 0;
+        padding-top:    11px;
+        padding-bottom: 11px;
+        border-left: 1px solid #f5f5f5;
+        border-right: 1px solid #e5e5e5;
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+                border-radius: 0;
+      }
+      .subnav .nav > .active > a,
+      .subnav .nav > .active > a:hover {
+        padding-left: 13px;
+        color: #777;
+        background-color: #e9e9e9;
+        border-right-color: #ddd;
+        border-left: 0;
+        -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+           -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+                box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+      }
+      .subnav .nav > .active > a .caret,
+      .subnav .nav > .active > a:hover .caret {
+        border-top-color: #777;
+      }
+      .subnav .nav > li:first-child > a,
+      .subnav .nav > li:first-child > a:hover {
+        border-left: 0;
+        padding-left: 12px;
+        -webkit-border-radius: 4px 0 0 4px;
+           -moz-border-radius: 4px 0 0 4px;
+                border-radius: 4px 0 0 4px;
+      }
+      .subnav .nav > li:last-child > a {
+        border-right: 0;
+      }
+      .subnav .dropdown-menu {
+        -webkit-border-radius: 0 0 4px 4px;
+           -moz-border-radius: 0 0 4px 4px;
+                border-radius: 0 0 4px 4px;
+      }
+
+      /* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
+      @media (min-width: 980px) {
+        .subnav-fixed {
+          position: fixed;
+          top: 40px;
+          left: 0;
+          right: 0;
+          z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+          border-color: #d5d5d5;
+          border-width: 0 0 1px; /* drop the border on the fixed edges */
+          -webkit-border-radius: 0;
+             -moz-border-radius: 0;
+                  border-radius: 0;
+          -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+             -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+                  box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+          filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+        }
+        .subnav-fixed .nav {
+          width: 938px;
+          margin: 0 20px;
+          padding: 0 1px;
+        }
+        .subnav .nav > li:first-child > a,
+        .subnav .nav > li:first-child > a:hover {
+          -webkit-border-radius: 0;
+             -moz-border-radius: 0;
+                  border-radius: 0;
+        }
+      }
+      
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Orange Museums</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+			  <li class="active"><a href="screens.html">Screens</a></li>
+			  <li><a href="styleguide.html">Styleguide</a></li>
+              <li><a href="dailymotion.html">Dailymotion Embedding</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <header>
+            <h1>Screens</h1>
+            <p>View the latest versions of each key screen here. There is also a reference code for each screen which relates to the sitemap/wireframe. Use the navigation on the left to view different screens and you can download each image with the accompanying link.</p>           
+            <div class="subnav">
+              <ul class="nav nav-pills">
+                <li><a href="#homeScreen"><small>1.0 /</small> Home Screen</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><small>2 /</small> Search <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#search-simple-screen"><small>2.1 /</small> Search - Simple</a></li>
+                    <li><a href="#search-faceted-musees-screen"><small>2.2 /</small> Search - Faceted Musées</a></li>
+                  </ul>
+                </li>                
+                <li><a href="#exposition"><small>3.0 /</small> Exposition</a></li>
+              </ul>
+            </div>
+            
+          </header>
+          
+          <section class="screen" id="homeScreen">
+            <div class="row-fluid">
+              <div class="span12">
+                <hr>
+                <h2><small>1.0 /</small> Home Screen</h2>
+                <p></p>
+                <img src="images/screens/orange-musees-home.png" alt="Orange Musees Home" />
+                <p></p>
+                <p><a class="btn" href="images/screens/orange-musees-home.png">Download image &raquo;</a></p>
+              </div><!--/span-->
+            </div><!--/row-->
+  		      <div class="row-fluid">
+              <div class="span6">
+                <h3>Overview</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				      
+              </div><!-- /span -->
+              <div class="span6">
+                <h3>Outstanding Questions</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              </div><!-- /span -->
+  	        </div><!--/row-->
+          </section>
+          
+          <section class="screen" id="search-simple-screen">
+            <div class="row-fluid">
+              <div class="span12">
+                <hr>
+                <h2 id="simple-search"><small>2.1 /</small> Simple Search Screen</h2>
+                <p></p>
+                <img src="images/screens/orange-musees-recherche-simple.png"alt="Orange Musees Recherche Simple" />
+                <p></p>
+                <p><a class="btn" href="images/screens/orange-musees-recherche-simple.png">Download image &raquo;</a></p>
+              </div><!--/span-->
+            </div><!--/row-->
+  		      <div class="row-fluid">
+              <div class="span6">
+                <h3>Overview</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				      
+              </div><!-- /span -->
+              <div class="span6">
+                <h3>Outstanding Questions</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              </div><!-- /span -->
+  	        </div><!--/row-->            
+          </section>
+          
+          <section class="screen" id="search-faceted-musees-screen">
+            <div class="row-fluid">
+              <div class="span12">
+                <hr>
+                <h2 id="simple-search"><small>2.2 /</small> Search - Simple</h2>
+                <p></p>
+                <img src="images/screens/orange-musees-recherche-musees.png" alt="Orange Musees Recherche Musees" />
+                <p></p>
+                <p><a class="btn" href="images/screens/orange-musees-recherche-musees.png">Download image &raquo;</a></p>
+              </div><!--/span-->
+            </div><!--/row-->
+  		      <div class="row-fluid">
+              <div class="span6">
+                <h3>Overview</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				      
+              </div><!-- /span -->
+              <div class="span6">
+                <h3>Outstanding Questions</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              </div><!-- /span -->
+  	        </div><!--/row-->            
+          </section>
+          
+          <section class="screen" id="exposition">
+            <div class="row-fluid">
+              <div class="span12">
+                <hr>
+                <h2 id="simple-search"><small>3.0 /</small> Exposition</h2>
+                <p></p>
+                <img src="images/screens/orange-musees-expositions-degas.png" alt="Orange Musees Expositions Degas" />
+                <p></p>
+                <p><a class="btn" href="images/screens/orange-musees-expositions-degas.png">Download image &raquo;</a></p>
+              </div><!--/span-->
+            </div><!--/row-->
+  		      <div class="row-fluid">
+              <div class="span6">
+                <h3>Overview</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				      
+              </div><!-- /span -->
+              <div class="span6">
+                <h3>Outstanding Questions</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              </div><!-- /span -->
+  	        </div><!--/row-->            
+          </section>
+          
+          
+          
+          
+          
+          
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>by Chris Masters &copy; Orange 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/application.js"></script>
+  </body>
+</html>
